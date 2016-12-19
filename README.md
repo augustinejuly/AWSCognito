@@ -31,7 +31,7 @@ This project has two examples namely for <b>Cognito User Pool</b> and for <b>Cog
 10. Execute the java class by uncommenting the required methods within the main method for the appropriate flows. <br/>
     SignUp - singUp <br/>
     Verifying Email - verifyEmail <br/>
-    Login - login (once it is executed, copy the id_token, access_token and refresh_token from the console and paster them into the config.properties) <br/>
+    Login - login (once it is executed, copy the id_token, access_token and refresh_token from the console and paste them into the                 config.properties) <br/>
     SignOut - singOut <br/>
     Update and Read User attributes - updateUserAttributes, getUsers <br/>
     Forgot Password - forgotPassword <br/>
