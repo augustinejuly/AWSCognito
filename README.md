@@ -28,7 +28,8 @@ This project has two examples namely for <b>Cognito User Pool</b> and for <b>Cog
   
 8. Java Class to be updated: com/demo/CognitoUserPoolDemo.java <br/>
 9. Open the java class <b>com/demo/CognitoUserPoolDemo.java</b> and update the region with your appropriate region <br/>
-10. Execute the java class by uncommenting the required methods within the main method for the appropriate flows. <br/>
+10. Execute the java class <b>com/demo/CognitoUserPoolDemo.java</b> by uncommenting the required methods within the main method for<br/>
+    the appropriate flows. <br/>
     SignUp - singUp <br/>
     Verifying Email - verifyEmail <br/>
     Login - login (once it is executed, copy the id_token, access_token and refresh_token from the console and paste them into the<br/>             config.properties) <br/>
@@ -43,9 +44,10 @@ This project has two examples namely for <b>Cognito User Pool</b> and for <b>Cog
  <b>Prerequisites for example 2:</b> <br/>
  1. Create an Identity Pool in Cognito <br/>
  2. In the Authentication providers section, Select the "Cognito" tab and configure the User pool Id and App Client Id that we <br/>         created  in the Example 1 above.<br/>
- 3. Open the <b>config.properties</b> and update the keys identity_pool_id and id_provider_name<br/>
+ 3. Open the <b>config.properties</b> and update the keys <b>identity_pool_id<b> and <b>id_provider_name<b><br/>
  4. In the IAM dashboard, create an IAM role with the ReadOnly Access to S3 bucket<br/>
- 5. Update the trust relationship of the role with following script.<br/>
+ 5. Update the trust relationship of the role with following script and make sure you update the script with .<br/>
+    "Your Identity Pool Id" with the actual Identity pool id <br/>
     {<br/>  
      "Version": "2012-10-17",  <br/>
      "Statement": [    <br/>
@@ -67,4 +69,9 @@ This project has two examples namely for <b>Cognito User Pool</b> and for <b>Cog
          }  <br/>
       ]<br/>
      }<br/>
+     6. Once the IAM role is created, copy the ARN of the role and update the <b>role_arn</b> property in the config.properties<br/>
+     7. Create a S3 bucket in the same region as your identity pool and and upload a text file to be read into the bucket<br/>
+     8. Once the bucket is created, update the <b>bucket_name</b> and <b>bucket_key</b> properties in the config.properties<br/>
+     9. Open the java class <b>com/demo/CognitoUPIDProviderDemo.java</b>  and update the region with your appropriate region <br/>
+     10 Execute the main method of the java class <b>com/demo/CognitoUPIDProviderDemo.java</b> and Observe the results <br/>
     
