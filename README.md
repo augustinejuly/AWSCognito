@@ -31,7 +31,7 @@ This project has two examples namely for <b>Cognito User Pool</b> and for <b>Cog
 10. Execute the java class by uncommenting the required methods within the main method for the appropriate flows. <br/>
     SignUp - singUp <br/>
     Verifying Email - verifyEmail <br/>
-    Login - login (once it is executed, copy the id_token, access_token and refresh_token from the console and paste them into the                 config.properties) <br/>
+    Login - login (once it is executed, copy the id_token, access_token and refresh_token from the console and paste them into the<br/>             config.properties) <br/>
     SignOut - singOut <br/>
     Update and Read User attributes - updateUserAttributes, getUsers <br/>
     Forgot Password - forgotPassword <br/>
@@ -41,4 +41,30 @@ This project has two examples namely for <b>Cognito User Pool</b> and for <b>Cog
     Delete User -deleteUser <br/>
  
  <b>Prerequisites for example 2:</b> <br/>
- 1. 
+ 1. Create an Identity Pool in Cognito <br/>
+ 2. In the Authentication providers section, Select the "Cognito" tab and configure the User pool Id and App Client Id that we <br/>         created  in the Example 1 above.<br/>
+ 3. Open the <b>config.properties</b> and update the keys identity_pool_id and id_provider_name<br/>
+ 4. In the IAM dashboard, create an IAM role with the ReadOnly Access to S3 bucket<br/>
+ 5. Update the trust relationship of the role with following script.<br/>
+    {<br/>  
+     "Version": "2012-10-17",  <br/>
+     "Statement": [    <br/>
+       {      <br/>
+           "Sid": "",      <br/>
+           "Effect": "Allow",      <br/>
+           "Principal": {        <br/>
+                "Federated": "cognito-identity.amazonaws.com"      <br/>
+            },      <br/>
+            "Action": "sts:AssumeRoleWithWebIdentity",      <br/>
+            "Condition": {        <br/>
+               "StringEquals": {          <br/>
+                 "cognito-identity.amazonaws.com:aud":             <b>"Your Identity Pool Id"</b> <br/>       
+             },        <br/>
+             "ForAnyValue:StringLike": {          <br/>
+                 "cognito-identity.amazonaws.com:amr": "authenticated"        <br/>
+               }      <br/>
+            }    <br/>
+         }  <br/>
+      ]<br/>
+     }<br/>
+    
