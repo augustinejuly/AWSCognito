@@ -27,7 +27,7 @@ This project has two examples namely for <b>Cognito User Pool</b> and for <b>Cog
     (d)change_password=password for change password flow <br/>
   
 8. Java Class to be updated: com/demo/CognitoUserPoolDemo.java <br/>
-9. Open the java class com/demo/CognitoUserPoolDemo.java and update the region with your appropriate region <br/>
+9. Open the java class <b>com/demo/CognitoUserPoolDemo.java</b> and update the region with your appropriate region <br/>
 10. Execute the java class by uncommenting the required methods within the main method for the appropriate flows. <br/>
     SignUp - singUp <br/>
     Verifying Email - verifyEmail <br/>
