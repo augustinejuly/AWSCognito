@@ -1,9 +1,9 @@
 # AWSCognito
 Example on AWS Cognito
 
-This project has two examples namely for Cognito User Pool and for Cognito Identity Pool
+This project has two examples namely for <b>Cognito User Pool</b> and for <b>Cognito Identity Pool</b>
 
-Prerequisites for example 1: <br/>
+<b>Prerequisites for example 1:</b> <br/>
 1. Create an AWS account and get the access and secret key credentials <br/>
 2. In Cognito user pool dashboard, create an user pool <br/>
 3. In the attributes section, create the following custom attributes which are of the type String. <br/>
