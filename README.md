@@ -27,7 +27,7 @@ This project has two examples namely for <b>Cognito User Pool</b> and for <b>Cog
     (d)change_password=password for change password flow <br/>
   
 8. Java Class to be updated: com/demo/CognitoUserPoolDemo.java <br/>
-9. Open the java class [<b>com/demo/CognitoUserPoolDemo.java</b>](https://github.com/augustinejuly/AWSCognito/blob/master/src/main/java/com/demo/CognitoUPIDProviderDemo.java) and update the region with your appropriate region <br/>
+9. Open the java class [<b>com/demo/CognitoUserPoolDemo.java</b>](https://github.com/augustinejuly/AWSCognito/blob/master/src/main/java/com/demo/CognitoUserPoolDemo.java) and update the region with your appropriate region <br/>
 10. Execute the java class <b>com/demo/CognitoUserPoolDemo.java</b> by uncommenting the required methods within the main method for<br/>
     the appropriate flows. <br/>
     SignUp - singUp <br/>
@@ -72,6 +72,6 @@ This project has two examples namely for <b>Cognito User Pool</b> and for <b>Cog
  6. Once the IAM role is created, copy the ARN of the role and update the <b>role_arn</b> property in the config.properties<br/>
  7. Create a S3 bucket in the same region as your identity pool and and upload a text file to be read into the bucket<br/>
  8. Once the bucket is created, update the <b>bucket_name</b> and <b>bucket_key</b> properties in the config.properties<br/>
- 9. Open the java class <b>com/demo/CognitoUPIDProviderDemo.java</b>  and update the region with your appropriate region.<br/>
+ 9. Open the java class [<b>com/demo/CognitoUPIDProviderDemo.java</b>](https://github.com/augustinejuly/AWSCognito/blob/master/src/main/java/com/demo/CognitoUPIDProviderDemo.java)  and update the region with your appropriate region.<br/>
  10. Execute the main method of the java class <b>com/demo/CognitoUPIDProviderDemo.java</b> and Observe the results <br/>
     
