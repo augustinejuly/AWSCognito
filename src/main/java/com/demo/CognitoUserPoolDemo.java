@@ -75,7 +75,7 @@ public class CognitoUserPoolDemo
 		
 		//changePassword(getProperty("confirm_password"), getProperty("change_password"));
 		
-		renewAccessTokenUsingRefreshToken(userId);
+		//renewAccessTokenUsingRefreshToken(userId);
 		
 		//deleteUser();
 
