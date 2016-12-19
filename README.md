@@ -44,7 +44,7 @@ This project has two examples namely for <b>Cognito User Pool</b> and for <b>Cog
  <b>Prerequisites for example 2:</b> <br/>
  1. Create an Identity Pool in Cognito <br/>
  2. In the Authentication providers section, Select the "Cognito" tab and configure the User pool Id and App Client Id that we <br/>         created  in the Example 1 above.<br/>
- 3. Open the <b>config.properties</b> and update the keys <b>identity_pool_id<b> and <b>id_provider_name<b><br/>
+ 3. Open the <b>config.properties</b> and update the keys <b>identity_pool_id</b> and <b>id_provider_name</b><br/>
  4. In the IAM dashboard, create an IAM role with the ReadOnly Access to S3 bucket<br/>
  5. Update the trust relationship of the role with following script and make sure you update the script with .<br/>
     "Your Identity Pool Id" with the actual Identity pool id <br/>
