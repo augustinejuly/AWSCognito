@@ -69,9 +69,9 @@ This project has two examples namely for <b>Cognito User Pool</b> and for <b>Cog
          }  <br/>
       ]<br/>
      }<br/>
-     6. Once the IAM role is created, copy the ARN of the role and update the <b>role_arn</b> property in the config.properties<br/>
-     7. Create a S3 bucket in the same region as your identity pool and and upload a text file to be read into the bucket<br/>
-     8. Once the bucket is created, update the <b>bucket_name</b> and <b>bucket_key</b> properties in the config.properties<br/>
-     9. Open the java class <b>com/demo/CognitoUPIDProviderDemo.java</b>  and update the region with your appropriate region <br/>
-     10 Execute the main method of the java class <b>com/demo/CognitoUPIDProviderDemo.java</b> and Observe the results <br/>
+ 6. Once the IAM role is created, copy the ARN of the role and update the <b>role_arn</b> property in the config.properties<br/>
+ 7. Create a S3 bucket in the same region as your identity pool and and upload a text file to be read into the bucket<br/>
+ 8. Once the bucket is created, update the <b>bucket_name</b> and <b>bucket_key</b> properties in the config.properties<br/>
+ 9. Open the java class <b>com/demo/CognitoUPIDProviderDemo.java</b>  and update the region with your appropriate region <br/>
+ 10 Execute the main method of the java class <b>com/demo/CognitoUPIDProviderDemo.java</b> and Observe the results <br/>
     
