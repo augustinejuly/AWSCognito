@@ -3,7 +3,7 @@ Example on AWS Cognito
 
 This sample project has two examples namely for <b>Cognito User Pool</b> and for <b>Cognito Identity Pool</b>
 
-<b>Prerequisites for example 1:</b> <br/>
+<b>Prerequisites for example 1 (Cognito User Pool Demo):</b> <br/>
 1. Create an AWS account and get the access and secret key credentials <br/>
 2. In Cognito user pool dashboard, create an user pool <br/>
 3. In the attributes section, create the following custom attributes which are of the type String. <br/>
@@ -41,7 +41,7 @@ This sample project has two examples namely for <b>Cognito User Pool</b> and for
     Renew Access Token - renewAccessTokenUsingRefreshToken <br/>
     Delete User -deleteUser <br/>
  
- <b>Prerequisites for example 2:</b> <br/>
+ <b>Prerequisites for example 2 (Cognito Identity Pool Demo):</b> <br/>
  1. Create an Identity Pool in Cognito <br/>
  2. In the Authentication providers section, Select the "Cognito" tab and configure the User pool Id and App Client Id that we <br/>         created  in the Example 1 above.<br/>
  3. Open the <b>config.properties</b> and update the keys <b>identity_pool_id</b> and <b>id_provider_name</b><br/>
