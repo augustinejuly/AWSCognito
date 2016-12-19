@@ -13,7 +13,7 @@ This project has two examples namely for <b>Cognito User Pool</b> and for <b>Cog
     (b) Enable the option "Enable sign-in API for server-based authentication (ADMIN_NO_SRP_AUTH)" <br/>
     (c) Disable or Have the option "Only allow Custom Authentication (CUSTOM_AUTH_FLOW_ONLY)" unchecked <br/>
 5. Now create the app <br/>
-6. Once the app is created, open the file config.properties in the example here and update the following values <br/>
+6. Once the app is created, open the file <b>config.properties</b> in the example here and update the following values <br/>
     (a) access_key= your access key <br/>
     (b) secret_key= your secret key <br/>
     (c) userpool_id= user pool id you just created <br/>
@@ -31,7 +31,7 @@ This project has two examples namely for <b>Cognito User Pool</b> and for <b>Cog
 10. Execute the java class by uncommenting the required methods within the main method for the appropriate flows. <br/>
     SignUp - singUp <br/>
     Verifying Email - verifyEmail <br/>
-    Login - login <br/>
+    Login - login (once it is executed, copy the id_token, access_token and refresh_token from the console and paster them into the config.properties) <br/>
     SignOut - singOut <br/>
     Update and Read User attributes - updateUserAttributes, getUsers <br/>
     Forgot Password - forgotPassword <br/>
@@ -39,3 +39,6 @@ This project has two examples namely for <b>Cognito User Pool</b> and for <b>Cog
     Change Password - changePassword <br/>
     Renew Access Token - renewAccessTokenUsingRefreshToken <br/>
     Delete User -deleteUser <br/>
+ 
+ <b>Prerequisites for example 2:</b> <br/>
+ 1. 
