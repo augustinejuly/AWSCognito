@@ -1,7 +1,7 @@
 # AWSCognito
 Example on AWS Cognito
 
-This project has two examples namely for <b>Cognito User Pool</b> and for <b>Cognito Identity Pool</b>
+This sample project has two examples namely for <b>Cognito User Pool</b> and for <b>Cognito Identity Pool</b>
 
 <b>Prerequisites for example 1:</b> <br/>
 1. Create an AWS account and get the access and secret key credentials <br/>
